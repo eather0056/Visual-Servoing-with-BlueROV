@@ -1,0 +1,36 @@
+
+Linux 20.04 or 18.04 LTS
+
+Example with Linux 18.04
+Install Linux, on a separate partition
+Installation of ROS sous Linux : http://wiki.ros.org/Installation/Ubuntu (melodic for ubuntu 18.04, neotic for 20.04)
+sudo apt-get install -y cmake python3-catkin-pkg python3-empy python3-nose python3-setuptools libgtest-dev build-essential openssh-server
+sudo apt-get install python3-wstool python3-rosinstall-generator python3-catkin-tools
+sudo apt-get install ros-neotic-joy (resp. neotic)
+mkdir catkin_ws/src
+catkin init    
+
+# install mavros locally:
+copy packages autonomous_rov, mavros and mavlink given in the tgz files into catkin_ws/src
+
+
+# building packages:
+catkin build
+catkin build -j1 -v
+
+
+# N.B. it also possible to install mavros packages from the network but some code may not be compatible any more with the embbedded version.
+# install mavros locally with the network:
+cd ~/catkin_ws
+catkin init
+wstool init ~/catkin_ws/src
+rosinstall_generator --upstream mavros | tee /tmp/mavros.rosinstall
+rosinstall_generator mavlink | tee -a /tmp/mavros.rosinstall
+wstool merge -t src /tmp/mavros.rosinstall
+wstool update -t src
+rosdep install --from-paths src --ignore-src --rosdistro neotic -y (resp neotic)
+
+In particular, the following change has to be made in OverrideRCIn.msg (catkin_ws/src/mavros/mavros_msgs):
+uint16[18] channels => uint16[8] channels
+
+
