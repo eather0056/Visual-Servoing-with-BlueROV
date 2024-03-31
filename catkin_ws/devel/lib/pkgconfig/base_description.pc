@@ -1,0 +1,1 @@
+/home/tihan/catkin_ws/devel/.private/base_description/lib/pkgconfig/base_description.pc

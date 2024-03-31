@@ -1,0 +1,12 @@
+Symlinking /home/tihan/catkin_ws/devel/lib/bluerov_ros_playground/video
+Symlinking /home/tihan/catkin_ws/devel/lib/bluerov_ros_playground/bridge.py
+Symlinking /home/tihan/catkin_ws/devel/lib/bluerov_ros_playground/user_mav
+Symlinking /home/tihan/catkin_ws/devel/lib/bluerov_ros_playground/bluerov_node.py
+Symlinking /home/tihan/catkin_ws/devel/lib/bluerov_ros_playground/gazebo_teleop.py
+Symlinking /home/tihan/catkin_ws/devel/lib/bluerov_ros_playground/cmake.lock
+Symlinking /home/tihan/catkin_ws/devel/lib/bluerov_ros_playground/sitl.py
+Symlinking /home/tihan/catkin_ws/devel/lib/bluerov_ros_playground/node
+Symlinking /home/tihan/catkin_ws/devel/lib/python3/dist-packages/bluerov/__init__.py
+Symlinking /home/tihan/catkin_ws/devel/lib/pkgconfig/bluerov_ros_playground.pc
+Symlinking /home/tihan/catkin_ws/devel/share/bluerov_ros_playground/cmake/bluerov_ros_playgroundConfig.cmake
+Symlinking /home/tihan/catkin_ws/devel/share/bluerov_ros_playground/cmake/bluerov_ros_playgroundConfig-version.cmake

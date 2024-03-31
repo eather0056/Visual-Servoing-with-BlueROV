@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/tihan/catkin_ws/devel/.private/bluerov_ros_playground/setup.sh
